@@ -11,4 +11,21 @@ To get started with this project, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/mhreja/laravel-crm.git
+
+2. Install Packages
+   ```bash
+   composer install
+3. Create env file
+   ```bash
+   cp .env-example .env
+4. Generate App Key
+   ```bash
+   php artisan key:generate
+5. Set App Url, Change the database keys and Mail settings accordingly
+6. Migrate and Seed Admin User
+   ```bash
+   php artisan migrate --seed
+7. Now ready to go
+   ```bash
+   php artisan serve
